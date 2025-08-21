@@ -13,9 +13,9 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  services.cloudflare-warp.enable = true;
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -92,6 +92,7 @@
       kdePackages.kate
       thunderbird
     ];
+    shell = pkgs.zsh;
   };
  
 
@@ -127,6 +128,14 @@
     ghostty
     kitty
     mesa
+    discord
+    blender
+    godot
+    helix
+    pkgs.cloudflare-warp
+    pkgs.vmware-workstation
+    pkgs.telegram-desktop
+    pkgs.youtube-music
     pkgs.jetbrains.rust-rover
     pkgs.jetbrains.goland
     pkgs.jetbrains.clion
@@ -153,12 +162,5 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "25.05"; # Did you read the comment?
-
+  system.stateVersion = "25.05";
 }
