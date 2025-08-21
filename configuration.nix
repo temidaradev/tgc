@@ -117,11 +117,13 @@
     neovim
     rustc
     cargo
+    zig
     go
     gcc
     btop
     lua
     git
+    wine
     glfw
     odin
     gnumake
