@@ -1,6 +1,5 @@
 {
-
-  description = "Flake";
+  description = "NixOS Configurations";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -25,6 +24,6 @@
         inherit pkgs;
         modules = [ ./home.nix ];
       };
-    }; 
+    };
   };
 }

@@ -5,13 +5,13 @@
   # manage.
   home.username = "temidaradev";
   home.homeDirectory = "/home/temidaradev";
-  
+
   programs.git = {
     enable = true;
     userName = "temidaradev";
     userEmail = "temidaradev@proton.me";
   };
-  
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
