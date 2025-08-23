@@ -122,6 +122,10 @@
     gcc
     btop
     lua
+    uv
+    python312
+    zlib
+    stdenv.cc.cc.lib
     git
     wine
     glfw
@@ -134,6 +138,7 @@
     blender
     godot
     helix
+    pkgs.lunar-client
     pkgs.cloudflare-warp
     pkgs.vmware-workstation
     pkgs.telegram-desktop
